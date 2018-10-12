@@ -4,7 +4,7 @@
 <p>
 
 ## Courses: [C# Web Development - Basics](https://softuni.bg/trainings/2086/csharp-web-development-basics-september-2018) & [C# ASP.Net Core](https://softuni.bg/trainings/2086/csharp-web-development-basics-september-2018)
-SoftUni course C# Web Development - Basics - September 2018: All tasks with their solutions.
+SoftUni course C# Web Development: All tasks with their solutions.
 
 ## C# Web Development - Basics course content:
 - HTML and CSS
