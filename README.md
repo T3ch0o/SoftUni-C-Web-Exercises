@@ -1,1 +1,1 @@
-# SoftUni-C-Web-Exercises
+# SoftUni-CSharp-Web-Exercises
