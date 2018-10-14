@@ -1,0 +1,7 @@
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\01. Even Numbers Thread\bin\Debug\_01.Even_Numbers_Thread.exe.config
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\01. Even Numbers Thread\bin\Debug\_01.Even_Numbers_Thread.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\01. Even Numbers Thread\bin\Debug\_01.Even_Numbers_Thread.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\01. Even Numbers Thread\obj\Debug\01. Even Numbers Thread.csprojAssemblyReference.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\01. Even Numbers Thread\obj\Debug\01. Even Numbers Thread.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\01. Even Numbers Thread\obj\Debug\_01.Even_Numbers_Thread.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\01. Even Numbers Thread\obj\Debug\_01.Even_Numbers_Thread.pdb

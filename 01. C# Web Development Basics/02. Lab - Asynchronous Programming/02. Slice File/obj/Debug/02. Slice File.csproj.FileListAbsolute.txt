@@ -1,0 +1,7 @@
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\02. Slice File\bin\Debug\_02.Slice_File.exe.config
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\02. Slice File\bin\Debug\_02.Slice_File.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\02. Slice File\bin\Debug\_02.Slice_File.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\02. Slice File\obj\Debug\02. Slice File.csprojAssemblyReference.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\02. Slice File\obj\Debug\02. Slice File.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\02. Slice File\obj\Debug\_02.Slice_File.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\02. Slice File\obj\Debug\_02.Slice_File.pdb

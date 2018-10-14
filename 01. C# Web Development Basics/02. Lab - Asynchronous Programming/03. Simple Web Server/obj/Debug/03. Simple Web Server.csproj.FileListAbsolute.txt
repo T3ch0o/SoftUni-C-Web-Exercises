@@ -1,0 +1,6 @@
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\03. Simple Web Server\bin\Debug\_03.Simple_Web_Server.exe.config
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\03. Simple Web Server\bin\Debug\_03.Simple_Web_Server.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\03. Simple Web Server\bin\Debug\_03.Simple_Web_Server.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\03. Simple Web Server\obj\Debug\03. Simple Web Server.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\03. Simple Web Server\obj\Debug\_03.Simple_Web_Server.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\02. Lab - Asynchronous Programming\03. Simple Web Server\obj\Debug\_03.Simple_Web_Server.pdb
