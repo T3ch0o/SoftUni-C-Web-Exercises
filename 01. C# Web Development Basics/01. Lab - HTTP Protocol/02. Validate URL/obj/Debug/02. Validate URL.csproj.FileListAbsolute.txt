@@ -1,0 +1,6 @@
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\01. Lab - HTTP Protocol\02. Validate URL\bin\Debug\_02.Validate_URL.exe.config
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\01. Lab - HTTP Protocol\02. Validate URL\bin\Debug\_02.Validate_URL.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\01. Lab - HTTP Protocol\02. Validate URL\bin\Debug\_02.Validate_URL.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\01. Lab - HTTP Protocol\02. Validate URL\obj\Debug\02. Validate URL.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\01. Lab - HTTP Protocol\02. Validate URL\obj\Debug\_02.Validate_URL.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\01. Lab - HTTP Protocol\02. Validate URL\obj\Debug\_02.Validate_URL.pdb
