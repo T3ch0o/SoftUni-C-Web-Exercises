@@ -1,0 +1,24 @@
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\bin\Debug\netcoreapp2.1\HTTP.WebServer.deps.json
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\bin\Debug\netcoreapp2.1\HTTP.WebServer.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\bin\Debug\netcoreapp2.1\HTTP.WebServer.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.AssemblyInfoInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.AssemblyInfo.cs
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.csprojAssemblyReference.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.csproj.CopyComplete
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\bin\Debug\netcoreapp2.1\HTTP.WebServer.deps.json
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\bin\Debug\netcoreapp2.1\HTTP.WebServer.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\bin\Debug\netcoreapp2.1\HTTP.WebServer.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.csprojAssemblyReference.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.AssemblyInfoInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.AssemblyInfo.cs
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.csproj.CopyComplete
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\HTTP.WebServer\obj\Debug\netcoreapp2.1\HTTP.WebServer.pdb

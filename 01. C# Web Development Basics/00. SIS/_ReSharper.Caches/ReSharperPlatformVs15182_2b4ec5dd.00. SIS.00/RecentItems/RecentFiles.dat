@@ -1,0 +1,59 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/d:Result/f:RedirectResult.cs" caret="267" fromTop="8" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Common/f:GlobalConstants.cs" caret="331" fromTop="10" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Enums/f:HttpResponseStatusCode.cs" caret="548" fromTop="20" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Enums/f:HttpRequestMethod.cs" caret="83" fromTop="4" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/d:Result/f:TextResult.cs" caret="464" fromTop="14" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Headers/d:Interfaces/f:IHttpHeaderCollection.cs" caret="189" fromTop="8" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/d:Interfaces/f:IHttpSession.cs" caret="63" fromTop="2" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Responses/d:Interfaces/f:IHttpResponse.cs" caret="302" fromTop="10" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/d:Interfaces/f:IHttpRequest.cs" caret="618" fromTop="25" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Cookies/d:Interfaces/f:IHttpCookieCollection.cs" caret="196" fromTop="8" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/d:Routing/f:ServerRoutingTable.cs" caret="886" fromTop="20" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="587" fromTop="21" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSession.cs" caret="370" fromTop="14" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSessionStorage.cs" caret="534" fromTop="16" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Extensions/f:HttpResponseStatusExtensions.cs" caret="214" fromTop="6" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Headers/f:HttpHeader.cs" caret="375" fromTop="17" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Headers/f:HttpHeaderCollection.cs" caret="1365" fromTop="22" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Cookies/f:HttpCookie.cs" caret="922" fromTop="32" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Cookies/f:HttpCookieCollection.cs" caret="1193" fromTop="22" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/d:Result/f:HtmlResult.cs" caret="216" fromTop="10" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Responses/f:HttpResponse.cs" caret="508" fromTop="0" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/f:Server.cs" caret="1268" fromTop="15" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/f:ConnectionHandler.cs" caret="2471" fromTop="60" />
+    <File id="86FFD4AB-DCEC-4E3F-ABF5-807CF9F77C4B/f:Launcher.cs" caret="285" fromTop="13" />
+    <File id="86FFD4AB-DCEC-4E3F-ABF5-807CF9F77C4B/f:HomeController.cs" caret="205" fromTop="8" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Cookies/f:HttpCookieCollection.cs" caret="667" fromTop="24" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSession.cs" caret="1182" fromTop="22" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSession.cs" caret="1245" fromTop="25" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/d:Interfaces/f:IHttpSession.cs" caret="199" fromTop="8" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSession.cs" caret="990" fromTop="26" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSession.cs" caret="1343" fromTop="32" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSession.cs" caret="360" fromTop="13" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSessionStorage.cs" caret="476" fromTop="15" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="457" fromTop="9" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="1166" fromTop="22" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Sessions/f:HttpSessionStorage.cs" caret="157" fromTop="7" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/f:ConnectionHandler.cs" caret="552" fromTop="15" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/f:ConnectionHandler.cs" caret="3802" fromTop="39" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/d:Interfaces/f:IHttpRequest.cs" caret="638" fromTop="25" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/f:ConnectionHandler.cs" caret="2723" fromTop="24" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Headers/f:HttpHeaderCollection.cs" caret="977" fromTop="26" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Headers/f:HttpHeaderCollection.cs" caret="1239" fromTop="33" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="2034" fromTop="10" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="4589" fromTop="28" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/f:ConnectionHandler.cs" caret="3182" fromTop="16" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="2261" fromTop="24" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="2555" fromTop="30" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="2700" fromTop="32" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Cookies/f:HttpCookieCollection.cs" caret="891" fromTop="30" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="2994" fromTop="21" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Requests/f:HttpRequest.cs" caret="4090" fromTop="28" />
+    <File id="87E4D4EE-EE25-473A-9743-292284920DDB/d:Cookies/f:HttpCookieCollection.cs" caret="810" fromTop="27" />
+    <File id="FA5865DD-8990-4A01-AEE6-4AAB1CE36C59/f:ConnectionHandler.cs" caret="2462" fromTop="26" />
+  </RecentEdits>
+</RecentFiles>

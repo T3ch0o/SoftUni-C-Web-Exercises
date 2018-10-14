@@ -1,0 +1,31 @@
+﻿<RecentlyViewedMethods>
+  <RecentlyViewedMethods>
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.Server.%23ctor%28System.Int32%2CSIS.WebServer.Routing.ServerRoutingTable%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Requests.HttpRequest.ParseRequest%28System.String%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Requests.HttpRequest.ParseHeaders%28System.String%5B%5D%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Headers.HttpHeader.%23ctor%28System.String%2CSystem.String%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Headers.HttpHeaderCollection.GetHeader%28System.String%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Requests.HttpRequest.ParseCookies" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Cookies.HttpCookieCollection.Add%28SIS.HTTP.Cookies.HttpCookie%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Requests.HttpRequest.ParseRequestParameters%28System.String%2CSystem.Boolean%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Requests.HttpRequest.ParseQueryParameters" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Requests.HttpRequest.%23ctor%28System.String%29" />
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.ConnectionHandler.ProcessRequestAsync" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Cookies.HttpCookieCollection.ContainsCookie%28System.String%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Cookies.HttpCookieCollection.GetCookie%28System.String%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Sessions.HttpSessionStorage.GetSession%28System.String%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Session.HttpSession.%23ctor%28System.String%29" />
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.ConnectionHandler.HandleRequest%28SIS.HTTP.Requests.Interfaces.IHttpRequest%29" />
+    <RecentMethod id="86ffd4ab-dcec-4e3f-abf5-807cf9f77c4b%28SIS.Demo%29-249E3967%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.Demo.HomeController.Index" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/P%3ASIS.HTTP.Responses.HttpResponse.Cookies" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Responses.HttpResponse.%23ctor%28SIS.HTTP.Enums.HttpResponseStatusCode%29" />
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.Result.HtmlResult.%23ctor%28System.String%2CSIS.HTTP.Enums.HttpResponseStatusCode%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Headers.HttpHeaderCollection.ContainsHeader%28System.String%29" />
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.ConnectionHandler.SetResponseSession%28SIS.HTTP.Responses.Interfaces.IHttpResponse%2CSystem.String%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Responses.HttpResponse.AddCookie%28SIS.HTTP.Cookies.HttpCookie%29" />
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.ConnectionHandler.PrepareResponse%28SIS.HTTP.Responses.Interfaces.IHttpResponse%29" />
+    <RecentMethod id="87e4d4ee-ee25-473a-9743-292284920ddb%28SIS.HTTP%29-24A0440C%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.HTTP.Responses.HttpResponse.ToString" />
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.Server.ListenLoop" />
+    <RecentMethod id="fa5865dd-8990-4a01-aee6-4aab1ce36c59%28SIS.WebServer%29-C9E88293%5B.NETFramework%2CVersion%3Dv4.7.2%5D/M%3ASIS.WebServer.ConnectionHandler.ReadRequest" />
+  </RecentlyViewedMethods>
+</RecentlyViewedMethods>

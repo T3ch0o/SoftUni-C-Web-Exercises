@@ -1,0 +1,13 @@
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\obj\Debug\SIS.Demo.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.Demo.exe.config
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.Demo.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.Demo.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.HTTP.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.WebServer.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.HTTP.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.WebServer.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\bin\Debug\SIS.WebServer.dll.config
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\obj\Debug\SIS.Demo.csprojAssemblyReference.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\obj\Debug\SIS.Demo.csproj.CopyComplete
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\obj\Debug\SIS.Demo.exe
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\00. SIS\SIS.Demo\obj\Debug\SIS.Demo.pdb

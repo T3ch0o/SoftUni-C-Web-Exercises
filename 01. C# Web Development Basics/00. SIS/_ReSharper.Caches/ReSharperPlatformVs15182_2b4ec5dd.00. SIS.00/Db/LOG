@@ -1,0 +1,22 @@
+2018/10/07-08:22:45.918 1d48 Recovering log #98
+2018/10/07-08:22:45.947 1d48 Level-0 table #106: started
+2018/10/07-08:22:46.091 1d48 Level-0 table #106: 914939 bytes OK
+2018/10/07-08:22:46.185 1d48 Delete type=0 #98
+2018/10/07-08:22:46.185 1d48 Delete type=3 #81
+2018/10/07-08:22:46.348 3b24 Compacting 1@0 + 3@1 files
+2018/10/07-08:22:46.398 3b24 Generated table #108: 197 keys, 45990 bytes
+2018/10/07-08:22:46.556 3b24 Generated table #109: 3025 keys, 2186992 bytes
+2018/10/07-08:22:46.683 3b24 Generated table #110: 2852 keys, 2159973 bytes
+2018/10/07-08:22:46.740 3b24 Generated table #111: 45 keys, 87973 bytes
+2018/10/07-08:22:46.740 3b24 Compacted 1@0 + 3@1 files => 4480928 bytes
+2018/10/07-08:22:46.771 3b24 Delete type=2 #100
+2018/10/07-08:22:46.771 3b24 Delete type=2 #101
+2018/10/07-08:22:46.771 3b24 Delete type=2 #102
+2018/10/07-08:22:46.772 3b24 Delete type=2 #106
+2018/10/07-08:22:46.772 3b24 compacted to: files[ 0 4 17 0 0 0 0 ]
+2018/10/07-08:23:29.282 3b24 Compacting 1@1 + 1@2 files
+2018/10/07-08:23:29.440 3b24 Generated table #112: 2015 keys, 1517662 bytes
+2018/10/07-08:23:29.441 3b24 Compacted 1@1 + 1@2 files => 1517662 bytes
+2018/10/07-08:23:29.468 3b24 Delete type=2 #104
+2018/10/07-08:23:29.468 3b24 Delete type=2 #111
+2018/10/07-08:23:29.469 3b24 compacted to: files[ 0 3 17 0 0 0 0 ]

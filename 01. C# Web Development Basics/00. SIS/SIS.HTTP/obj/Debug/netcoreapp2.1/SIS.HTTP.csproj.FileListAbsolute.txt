@@ -1,0 +1,17 @@
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.deps.json
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfoInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\03. Lab - Web Server – Databases\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csprojAssemblyReference.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.deps.json
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csproj.CoreCompileInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfoInputs.cache
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\Projects\SoftUni Exercises\C#\03. C# Web\01. C# Web Development Basics\04. Databases – EF Core Exercise\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb
