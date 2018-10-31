@@ -1,0 +1,25 @@
+﻿<div class="container text-dark">
+    <h1 class="text-success text-center">Create Album</h1>
+    <hr class="bg-success"/>
+    <form action="/tracks/create?albumId={{albumId}}" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name...">
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="link">Link</label>
+                <input type="text" class="form-control" id="link" name="link" placeholder="Link...">
+            </div>
+            <div class="col">
+                <label for="price">Price</label>
+                <input type="text" class="form-control" id="price" name="price" placeholder="Price...">
+            </div>
+        </div>
+        <hr class="bg-success" />
+        <div class="row text-center">
+            <button type="submit" class="btn btn-success center-button">Create</button>
+            <a href="/albums/details?id={{albumId}}" class="btn btn-success center-button">Back To All</a>
+        </div>
+    </form>
+</div>

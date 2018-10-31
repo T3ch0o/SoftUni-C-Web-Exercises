@@ -1,0 +1,25 @@
+﻿hr {
+    padding: 1px !important
+}
+
+.center-button {
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+.album-container {
+    margin: 5px
+}
+
+img {
+    width: 100%
+}
+
+.album-info {
+    width: 750px !important
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
