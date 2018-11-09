@@ -16,3 +16,14 @@ SoftUni course C# Web Development: All tasks with their solutions.
 - Introduction to MVC
 - Advanced MVC Framework - IOC, Data Binding, Auto-Mapping
 - Advanced MVC Framework - Extending MVC Framework
+
+## APS.NET Core MVC course content:
+- ASP.NET Core Introduction
+- Razor Pages Architecture
+- MVC Architecture Components
+- Filters
+- Identity
+- Architecture
+- Unit Testing
+- ASP.NET WebApi
+- ASP.NET Singalr
