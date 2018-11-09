@@ -8,7 +8,7 @@
     using Microsoft.EntityFrameworkCore;
 
     using FDMC.Data;
-
+    using FDMC.Models;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
 
@@ -34,7 +34,7 @@
             services.AddDbContext<FdmcDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options =>
+            services.AddIdentity<User, IdentityRole>(options =>
                     {
                         options.Password.RequireDigit = false;
                         options.Password.RequireLowercase = true;
@@ -43,7 +43,8 @@
                         options.Password.RequiredUniqueChars = 0;
                         options.Password.RequiredLength = 3;
                     })
-                .AddEntityFrameworkStores<FdmcDbContext>();
+                    .AddEntityFrameworkStores<FdmcDbContext>()
+                    .AddDefaultTokenProviders();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
