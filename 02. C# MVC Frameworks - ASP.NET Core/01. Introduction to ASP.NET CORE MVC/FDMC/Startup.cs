@@ -9,6 +9,9 @@
 
     using FDMC.Data;
     using FDMC.Models;
+    using FDMC.Services;
+    using FDMC.Services.Interfaces;
+
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
 
@@ -47,6 +50,7 @@
                     .AddDefaultTokenProviders();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddTransient<ICatService, CatService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
