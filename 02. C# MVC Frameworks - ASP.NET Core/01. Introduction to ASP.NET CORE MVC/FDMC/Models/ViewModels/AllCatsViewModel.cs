@@ -1,9 +1,10 @@
 ﻿namespace FDMC.Models.ViewModels
 {
     using System.Collections.Generic;
+    using System.Linq;
 
     public class AllCatsViewModel
     {
-        public ICollection<Cat> Cats { get; set; }
+        public IQueryable<Cat> Cats { get; set; }
     }
 }
