@@ -1,0 +1,16 @@
+﻿@model Cat
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<h3>@Model.Name</h3>
+
+<img src="@Model.Url" alt="@Model.Name" width="300" height="300" />
+
+<h4>Age: @Model.Age</h4>
+<h4>Breed: @Model.Breed</h4>
+
+<a href="/" class="btn btn-primary">Back to home</a>
