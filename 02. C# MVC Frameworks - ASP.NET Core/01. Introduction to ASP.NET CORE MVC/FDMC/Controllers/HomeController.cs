@@ -1,5 +1,6 @@
 ﻿namespace FDMC.Controllers
 {
+    using FDMC.Models.ViewModels;
     using FDMC.Services.Interfaces;
 
     using Microsoft.AspNetCore.Mvc;
@@ -15,7 +16,12 @@
 
         public IActionResult Index()
         {
-            return View();
+            AllCatsViewModel allCats = new AllCatsViewModel()
+            {
+                Cats = _catService.GetAllCats()
+            };
+
+            return View(allCats);
         }
     }
 }
