@@ -21,7 +21,7 @@
             return _db.Cats;
         }
 
-        public void AddCat(AddCatViewModel model)
+        public void AddCat(CatViewModel model)
         {
             Cat cat = new Cat
             {
@@ -33,6 +33,11 @@
 
             _db.Cats.Add(cat);
             _db.SaveChanges();
+        }
+
+        public Cat GetCat(int id)
+        {
+            return _db.Cats.FirstOrDefault(c => c.Id == id);
         }
     }
 }

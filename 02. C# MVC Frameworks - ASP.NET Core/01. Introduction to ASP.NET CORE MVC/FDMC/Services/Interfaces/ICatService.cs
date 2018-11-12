@@ -9,6 +9,8 @@
     {
         IQueryable<Cat> GetAllCats();
 
-        void AddCat(AddCatViewModel model);
+        void AddCat(CatViewModel model);
+
+        Cat GetCat(int id);
     }
 }
