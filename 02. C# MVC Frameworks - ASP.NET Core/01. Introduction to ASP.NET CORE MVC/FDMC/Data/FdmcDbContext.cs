@@ -7,6 +7,8 @@
 
     public class FdmcDbContext : IdentityDbContext<User>
     {
+        public DbSet<Cat> Cats { get; set; }
+
         public FdmcDbContext(DbContextOptions<FdmcDbContext> options)
             : base(options)
         {
