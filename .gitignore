@@ -265,6 +265,7 @@ __pycache__/
 *.svg
 *.DS_Store
 *.sln
-/02. C# MVC Frameworks - ASP.NET Core/01. Introduction to ASP.NET CORE MVC/FDMC/ScaffoldingReadme.txt
 *.min.js
 *.min.css
+**/Data/Migrations
+/02. C# MVC Frameworks - ASP.NET Core/01. Introduction to ASP.NET CORE MVC/FDMC/ScaffoldingReadme.txt
