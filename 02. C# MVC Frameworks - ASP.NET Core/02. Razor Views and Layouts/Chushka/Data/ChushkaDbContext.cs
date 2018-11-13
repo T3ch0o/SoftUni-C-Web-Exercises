@@ -1,11 +1,13 @@
 ﻿namespace Chushka.Data
 {
+    using Chushka.Models;
+
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 
-    public class ApplicationDbContext : IdentityDbContext
+    public class ChushkaDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public ChushkaDbContext(DbContextOptions<ChushkaDbContext> options)
             : base(options)
         {
         }
