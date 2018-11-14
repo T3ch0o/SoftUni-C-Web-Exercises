@@ -30,7 +30,7 @@
 
         [HttpPost]
         [Authorize(Roles = "Administrator")]
-        public RedirectResult Create(CreateProductViewModel model)
+        public RedirectResult Create(ProductViewModel model)
         {
             _productService.AddProduct(model);
 
@@ -51,6 +51,31 @@
             string userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
             _orderService.CreateOrder(userId, id);
+
+            return Redirect("/");
+        }
+
+        [Authorize(Roles = "Administrator")]
+        public IActionResult Edit(int id)
+        {
+            Product product = _productService.GetProduct(id);
+            ProductViewModel productViewModel = new ProductViewModel()
+            {
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price,
+                SelectedFoodType = product.Type.ToString(),
+                Id = product.Id
+            };
+
+            return View(productViewModel);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Administrator")]
+        public RedirectResult Edit(ProductViewModel model)
+        {
+            _productService.EditProduct(model);
 
             return Redirect("/");
         }
