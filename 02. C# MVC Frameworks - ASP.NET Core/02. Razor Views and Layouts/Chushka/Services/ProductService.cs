@@ -41,5 +41,10 @@ namespace Chushka.Services
                 _db.SaveChanges();
             }
         }
+
+        public Product GetProduct(int id)
+        {
+            return _db.Products.FirstOrDefault(p => p.Id == id);
+        }
     }
 }

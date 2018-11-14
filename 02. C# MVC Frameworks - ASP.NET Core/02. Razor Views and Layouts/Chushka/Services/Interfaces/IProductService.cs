@@ -10,5 +10,7 @@
         IEnumerable<Product> GetProducts();
 
         void AddProduct(CreateProductViewModel model);
+
+        Product GetProduct(int id);
     }
 }
