@@ -1,6 +1,5 @@
 ﻿namespace Chushka.Models.ViewModels
 {
-    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
 
     public class RegisterViewModel
