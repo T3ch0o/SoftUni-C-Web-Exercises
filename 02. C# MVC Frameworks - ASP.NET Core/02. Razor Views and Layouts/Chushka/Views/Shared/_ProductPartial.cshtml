@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Product>
+
+@if (Model.Any())
+{
+    foreach (Product product in Model)
+    {
+        <div class="container-fluid product-holder">
+            <div class="row d-flex justify-content-around">
+                <div class="product col-md-2 chushka-bg-color rounded-top rounded-bottom text-center">
+                    <h5 class="text-center mt-3">@product.Name</h5>
+                    <hr class="hr-1 bg-white"/>
+                    <p class="text-white text-center">
+                        @product.Description
+                    </p>
+                    <hr class="hr-1 bg-white"/>
+                    <h6 class="text-center text-white mb-3">@product.Price</h6>
+                    <a asp-controller="Product" asp-action="Details" class="btn btn-dark mb-3">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="text-center">
+        <h5>No products to share.</h5>
+        @if (User.IsInRole("Administrator"))
+        {
+        <p>Go <a asp-controller="Product" asp-action="Create" class="text-danger">Create some</a>.</p>
+        }
+    </div>
+}
