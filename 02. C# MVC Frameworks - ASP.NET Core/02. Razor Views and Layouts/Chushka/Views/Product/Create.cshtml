@@ -1,0 +1,49 @@
+﻿@model Chushka.Models.ViewModels.CreateProductViewModel
+
+<div class="mt-3 mb-5">
+    <h1 class="text-center">Create Product</h1>
+    <hr class="hr-2 bg-dark" />
+    <form asp-action="Create" class="mx-auto half-width" method="post" >
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" placeholder="Name..." />
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" type="number" placeholder="Price..." />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Description..."></textarea>
+        </div>
+        <h4 class="text-center">Product Type</h4>
+        <hr class="hr-2 bg-dark half-width mt-4" />
+        <div class="product-type-holder mt-4 d-flex justify-content-around">
+            <div class="form-check form-check-inline">
+                <input asp-for="SelectedFoodType" class="form-check-input" type="radio" id="inlineRadio1" value="Food">
+                <label asp-for="SelectedFoodType" class="form-check-label" for="inlineRadio1">Food</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input asp-for="SelectedFoodType" class="form-check-input" type="radio" id="inlineRadio2" value="Domestic">
+                <label asp-for="SelectedFoodType" class="form-check-label" for="inlineRadio2">Domestic</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input asp-for="SelectedFoodType" class="form-check-input" type="radio" id="inlineRadio3" value="Health">
+                <label asp-for="SelectedFoodType" class="form-check-label" for="inlineRadio3">Health</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input asp-for="SelectedFoodType" class="form-check-input" type="radio" id="inlineRadio4" value="Cosmetic">
+                <label asp-for="SelectedFoodType" class="form-check-label" for="inlineRadio4">Cosmetic</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input asp-for="SelectedFoodType" class="form-check-input" type="radio" id="inlineRadio5" value="Other" checked>
+                <label asp-for="SelectedFoodType" class="form-check-label" for="inlineRadio5">Other</label>
+            </div>
+        </div>
+        <hr class="hr-2 bg-dark half-width mt-4" />
+        <div class="button-holder mt-2 d-flex justify-content-center">
+            <button type="submit" class="btn chushka-bg-color">Create</button>
+        </div>
+    </form>
+</div>
+
