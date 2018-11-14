@@ -1,5 +1,7 @@
 ﻿namespace Chushka
 {
+    using System;
+
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Hosting;
@@ -9,6 +11,7 @@
 
     using Chushka.Data;
     using Chushka.Models;
+    using Chushka.Utilities;
 
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -50,18 +53,11 @@
                 .AddEntityFrameworkStores<ChushkaDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.ConfigureApplicationCookie(options =>
-            {
-                options.LoginPath = "/Account/Login";
-                options.LogoutPath = "/Identity/Account/Logout";
-                options.AccessDeniedPath = "/Account/AccessDenied";
-            });
-
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -74,6 +70,7 @@
                 app.UseHsts();
             }
 
+            Seeder.Seed(serviceProvider);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
