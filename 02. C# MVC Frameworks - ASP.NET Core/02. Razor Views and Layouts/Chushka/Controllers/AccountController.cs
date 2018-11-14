@@ -8,6 +8,7 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore.Internal;
 
     using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
@@ -75,6 +76,11 @@
                 ApplicationUser user = new ApplicationUser { UserName = model.Username, Email = model.Email, FullName = model.FullName };
                 IdentityResult result = await _userManager.CreateAsync(user, model.Password);
 
+                if (!_signInManager.UserManager.Users.Any())
+                {
+                    await _signInManager.UserManager.AddToRoleAsync(user, "Administrator");
+                }
+
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
@@ -89,6 +95,13 @@
             }
 
             return View();
+        }
+
+        public async Task<RedirectResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+
+            return Redirect("/");
         }
     }
 }
