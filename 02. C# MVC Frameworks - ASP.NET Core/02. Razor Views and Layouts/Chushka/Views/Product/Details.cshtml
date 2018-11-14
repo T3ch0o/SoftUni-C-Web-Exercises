@@ -16,7 +16,12 @@
     </div>
     <hr class="hr-2 bg-dark"/>
     <h3 class="text-center">Actions</h3>
-    <div class="product-action-holder mt-4 d-flex justify-content-around">
+    <div class="product-action-holder mt-4 half-width mx-auto d-flex justify-content-around">
         <a asp-action="Order" asp-route-id="@Model.Id" class="btn chushka-bg-color">Order</a>
+        @if (User.IsInRole("Administrator"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn chushka-bg-color">Edit</a>
+            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn chushka-bg-color">Delete</a>
+        }
     </div>
 </div>
