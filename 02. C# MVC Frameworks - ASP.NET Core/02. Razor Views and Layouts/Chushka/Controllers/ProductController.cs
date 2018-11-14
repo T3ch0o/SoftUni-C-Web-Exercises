@@ -1,7 +1,10 @@
 ﻿namespace Chushka.Controllers
 {
+    using System.Security.Claims;
+
     using Chushka.Models;
     using Chushka.Models.ViewModels;
+    using Chushka.Services;
     using Chushka.Services.Interfaces;
 
     using Microsoft.AspNetCore.Authorization;
@@ -11,9 +14,12 @@
     {
         private readonly IProductService _productService;
 
-        public ProductController(IProductService productService)
+        private readonly IOrderService _orderService;
+
+        public ProductController(IProductService productService, IOrderService orderService)
         {
             _productService = productService;
+            _orderService = orderService;
         }
 
         [Authorize(Roles = "Administrator")]
@@ -37,6 +43,16 @@
             Product product =_productService.GetProduct(id);
 
             return View(product);
+        }
+
+        [Authorize]
+        public RedirectResult Order(int id)
+        {
+            string userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            _orderService.CreateOrder(userId, id);
+
+            return Redirect("/");
         }
     }
 }
