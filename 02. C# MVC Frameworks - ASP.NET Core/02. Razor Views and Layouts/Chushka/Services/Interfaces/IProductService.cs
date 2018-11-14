@@ -13,6 +13,8 @@
 
         void EditProduct(ProductViewModel model);
 
+        void DeleteProduct(int id);
+
         Product GetProduct(int id);
     }
 }

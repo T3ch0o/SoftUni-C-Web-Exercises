@@ -57,6 +57,15 @@ namespace Chushka.Services
             }
         }
 
+        public void DeleteProduct(int id)
+        {
+            Product toDelete = new Product { Id = id };
+
+            _db.Products.Attach(toDelete);
+            _db.Products.Remove(toDelete);
+            _db.SaveChanges();
+        }
+
         public Product GetProduct(int id)
         {
             return _db.Products.FirstOrDefault(p => p.Id == id);
