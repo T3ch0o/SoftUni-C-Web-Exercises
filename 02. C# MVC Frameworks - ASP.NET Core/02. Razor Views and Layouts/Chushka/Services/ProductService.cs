@@ -25,7 +25,7 @@ namespace Chushka.Services
             return _db.Products;
         }
 
-        public void AddProduct(CreateProductViewModel model)
+        public void AddProduct(ProductViewModel model)
         {
             if (Enum.TryParse(model.SelectedFoodType, out ProductType productType))
             {
@@ -38,6 +38,21 @@ namespace Chushka.Services
                 };
 
                 _db.Products.Add(product);
+                _db.SaveChanges();
+            }
+        }
+
+        public void EditProduct(ProductViewModel model)
+        {
+            Product product = _db.Products.FirstOrDefault(p => p.Id == model.Id);
+
+            if (product != null && Enum.TryParse(model.SelectedFoodType, out ProductType productType))
+            {
+                product.Name = model.Name;
+                product.Description = model.Description;
+                product.Price = model.Price;
+                product.Type = productType;
+
                 _db.SaveChanges();
             }
         }

@@ -9,7 +9,9 @@
     {
         IEnumerable<Product> GetProducts();
 
-        void AddProduct(CreateProductViewModel model);
+        void AddProduct(ProductViewModel model);
+
+        void EditProduct(ProductViewModel model);
 
         Product GetProduct(int id);
     }
