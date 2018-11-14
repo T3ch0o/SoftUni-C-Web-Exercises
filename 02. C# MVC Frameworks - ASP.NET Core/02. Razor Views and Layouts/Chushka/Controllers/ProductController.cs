@@ -79,5 +79,30 @@
 
             return Redirect("/");
         }
+
+        [Authorize(Roles = "Administrator")]
+        public IActionResult Delete(int id)
+        {
+            Product product = _productService.GetProduct(id);
+            ProductViewModel productViewModel = new ProductViewModel()
+            {
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    SelectedFoodType = product.Type.ToString(),
+                    Id = product.Id
+            };
+
+            return View(productViewModel);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Administrator")]
+        public RedirectResult Delete(ProductViewModel model)
+        {
+            _productService.DeleteProduct(model.Id);
+
+            return Redirect("/");
+        }
     }
 }
