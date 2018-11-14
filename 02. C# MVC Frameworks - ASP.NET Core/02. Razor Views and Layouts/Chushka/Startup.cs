@@ -55,6 +55,8 @@
                 .AddEntityFrameworkStores<ChushkaDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/");
+
             services.AddTransient<IProductService, ProductService>();
 
             services.AddMvc();
