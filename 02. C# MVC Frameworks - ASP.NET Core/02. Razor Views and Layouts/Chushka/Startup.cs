@@ -11,6 +11,8 @@
 
     using Chushka.Data;
     using Chushka.Models;
+    using Chushka.Services;
+    using Chushka.Services.Interfaces;
     using Chushka.Utilities;
 
     using Microsoft.Extensions.Configuration;
@@ -52,6 +54,8 @@
                 })
                 .AddEntityFrameworkStores<ChushkaDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddTransient<IProductService, ProductService>();
 
             services.AddMvc();
         }
