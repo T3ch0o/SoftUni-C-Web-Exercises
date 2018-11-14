@@ -1,5 +1,6 @@
 ﻿namespace Chushka.Controllers
 {
+    using Chushka.Models;
     using Chushka.Models.ViewModels;
     using Chushka.Services.Interfaces;
 
@@ -28,6 +29,14 @@
             _productService.AddProduct(model);
 
             return Redirect("/");
+        }
+
+        [Authorize]
+        public IActionResult Details(int id)
+        {
+            Product product =_productService.GetProduct(id);
+
+            return View(product);
         }
     }
 }
