@@ -58,6 +58,7 @@
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/");
 
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IOrderService, OrderService>();
 
             services.AddMvc();
         }
