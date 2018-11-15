@@ -12,10 +12,10 @@
         @if (User.IsInRole("Administrator"))
         {
             <li class="nav-item">
-                <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Create Product</a>
+                <a asp-controller="Product" asp-action="Create" class="nav-link nav-link-white">Create Product</a>
             </li>
             <li class="nav-item">
-                <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">All Orders</a>
+                <a asp-controller="Orders" asp-action="Index" class="nav-link nav-link-white">All Orders</a>
             </li>
         }
     </ul>
