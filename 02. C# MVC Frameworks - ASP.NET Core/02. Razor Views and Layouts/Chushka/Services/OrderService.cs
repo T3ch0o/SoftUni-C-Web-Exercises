@@ -1,9 +1,13 @@
 ﻿namespace Chushka.Services
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
     using Chushka.Data;
     using Chushka.Models;
+
+    using Microsoft.EntityFrameworkCore;
 
     public class OrderService : IOrderService
     {
@@ -25,6 +29,14 @@
 
             _db.Orders.Add(order);
             _db.SaveChanges();
+        }
+
+        public List<Order> GetOrders()
+        {
+            return _db.Orders
+                      .Include(order => order.Product)
+                      .Include(order => order.Client)
+                      .ToList();
         }
     }
 }
