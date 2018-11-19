@@ -11,5 +11,7 @@
             : base(options)
         {
         }
+
+        public DbSet<Event> Events { get; set; }
     }
 }
