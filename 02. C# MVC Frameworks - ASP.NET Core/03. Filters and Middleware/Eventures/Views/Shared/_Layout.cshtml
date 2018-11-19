@@ -18,9 +18,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-                @{
-                    await Html.RenderPartialAsync("_LoginPartial");
-                }
+                <partial name="_LoginPartial" />
             </div>
         </nav>
     </header>
