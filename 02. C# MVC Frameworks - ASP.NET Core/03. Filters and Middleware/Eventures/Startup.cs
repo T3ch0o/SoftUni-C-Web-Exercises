@@ -3,7 +3,10 @@
     using System;
 
     using Eventures.Data;
+    using Eventures.Middlewares;
     using Eventures.Models;
+    using Eventures.Services;
+    using Eventures.Services.Interfaces;
 
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -52,6 +55,8 @@
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/");
 
             services.AddMvc();
+
+            services.AddScoped<IEventService, EventService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,6 +73,7 @@
                 app.UseHsts();
             }
 
+            app.UseSeedDataMiddleware();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
