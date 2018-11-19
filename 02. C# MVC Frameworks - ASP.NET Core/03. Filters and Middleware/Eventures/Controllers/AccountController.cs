@@ -73,7 +73,14 @@
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser user = new ApplicationUser { UserName = model.Username, Email = model.Email, FullName = model.FullName };
+                ApplicationUser user = new ApplicationUser
+                {
+                    UserName = model.Username,
+                    Email = model.Email,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    UniversalCitizenNumber = model.UniversalCitizenNumber
+                };
                 IdentityResult result = await _userManager.CreateAsync(user, model.Password);
 
                 if (!_signInManager.UserManager.Users.Any())
