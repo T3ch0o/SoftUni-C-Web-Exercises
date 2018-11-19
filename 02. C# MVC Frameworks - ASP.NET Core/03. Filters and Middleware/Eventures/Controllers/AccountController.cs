@@ -1,5 +1,6 @@
 ﻿namespace Eventures.Controllers
 {
+    using System.Linq;
     using System.Threading.Tasks;
 
     using Eventures.Models;
@@ -81,9 +82,10 @@
                     LastName = model.LastName,
                     UniversalCitizenNumber = model.UniversalCitizenNumber
                 };
+
                 IdentityResult result = await _userManager.CreateAsync(user, model.Password);
 
-                if (!_signInManager.UserManager.Users.Any())
+                if (_signInManager.UserManager.Users.Count() == 1)
                 {
                     await _signInManager.UserManager.AddToRoleAsync(user, "Administrator");
                 }
