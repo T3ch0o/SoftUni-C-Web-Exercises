@@ -1,15 +1,14 @@
 ﻿namespace Eventures.Middlewares
 {
     using System;
-    using System.Collections.Generic;
     using System.Threading.Tasks;
 
     using Eventures.Data;
     using Eventures.Models;
 
     using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore.Internal;
-    using Microsoft.Extensions.DependencyInjection;
 
     public class SeedDataMiddleware
     {
@@ -20,17 +19,24 @@
             _next = next;
         }
 
-        public async Task InvokeAsync(HttpContext context, EventuresDbContext db)
+        public async Task InvokeAsync(HttpContext context,
+                                      EventuresDbContext db,
+                                      RoleManager<IdentityRole> roleManager)
         {
             if (!db.Events.Any())
             {
                 SeedEvents(db);
             }
 
+            if (!roleManager.RoleExistsAsync("Administrator").Result)
+            {
+                await roleManager.CreateAsync(new IdentityRole("Administrator"));
+            }
+
             await _next(context);
         }
 
-        private void SeedEvents(EventuresDbContext db)
+        private static void SeedEvents(EventuresDbContext db)
         {
             for (int i = 1; i <= 10; i++)
             {
