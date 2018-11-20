@@ -1,10 +1,7 @@
 ﻿namespace Eventures.Areas.Events.Controllers
 {
-    using System.Collections.Generic;
-
     using Eventures.Areas.Event.ViewModels;
     using Eventures.Filters;
-    using Eventures.Models;
     using Eventures.Services.Interfaces;
 
     using Microsoft.AspNetCore.Authorization;
@@ -24,6 +21,24 @@
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(EventViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                _eventService.Create(model);
+
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
         }
     }
 }
