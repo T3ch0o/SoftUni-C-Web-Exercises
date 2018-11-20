@@ -3,6 +3,7 @@
     using System;
 
     using Eventures.Data;
+    using Eventures.Logging;
     using Eventures.Middlewares;
     using Eventures.Models;
     using Eventures.Services;
@@ -15,6 +16,8 @@
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.DependencyInjection.Extensions;
+    using Microsoft.Extensions.Logging;
 
     public class Startup
     {
@@ -57,11 +60,19 @@
             services.AddMvc();
 
             services.AddScoped<IEventService, EventService>();
+            services.AddLogging();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
+        public void Configure(
+                IApplicationBuilder app,
+                IHostingEnvironment env,
+                IServiceProvider serviceProvider,
+                ILoggerFactory loggingFactory,
+                EventuresDbContext db)
         {
+            loggingFactory.AddContext(LogLevel.Error, db);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
