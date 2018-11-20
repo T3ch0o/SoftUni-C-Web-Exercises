@@ -7,10 +7,28 @@
 {
     <ul class="navbar-nav right-side">
         <li class="nav-item">
-            <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Home</a>
+            <a href="/" class="nav-link nav-link-white">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="#" aria-expanded="false">Events</a>
+            <div class="dropdown-menu">
+                <a asp-area="Events" class="dropdown-item">All Events</a>
+                @if (User.IsInRole("Administartor"))
+                {
+                    <a asp-area="Events" asp-controller="Event" asp-action="Create" class="dropdown-item">Create Event</a>
+                }
+            </div>
         </li>
     </ul>
     <ul class="navbar-nav left-side">
+        @if (User.IsInRole("Administrator"))
+        {
+            <li class="nav-item">Hello, Admin!</li>
+        }
+        else
+        {
+            <li class="nav-item">Hello, @User.Identity.Name!</li>
+        }
         <li class="nav-item">
             <a asp-controller="Account" asp-action="Logout" class="nav-link nav-link-white">Logout</a>
         </li>
