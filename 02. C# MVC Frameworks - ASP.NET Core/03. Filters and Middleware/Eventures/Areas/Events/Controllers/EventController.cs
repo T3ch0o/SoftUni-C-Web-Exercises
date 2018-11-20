@@ -23,21 +23,7 @@
         [ServiceFilter(typeof(LogUserActivityActionFilter))]
         public IActionResult Index()
         {
-            IEnumerable<Event> events = _eventService.All();
-            List<EventViewModel> eventViewModels = new List<EventViewModel>();
-
-            foreach (Event @event in events)
-            {
-                eventViewModels.Add(new EventViewModel
-                {
-                    Name = @event.Name,
-                    Place = @event.Place,
-                    Start = @event.Start,
-                    End = @event.End
-                });
-            }
-
-            return View(eventViewModels);
+            return View();
         }
     }
 }
