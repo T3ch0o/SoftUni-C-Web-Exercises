@@ -13,5 +13,7 @@
         }
 
         public DbSet<Event> Events { get; set; }
+
+        public DbSet<CustomLog> Logs { get; set; }
     }
 }
