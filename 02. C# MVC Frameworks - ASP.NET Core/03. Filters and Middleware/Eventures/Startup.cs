@@ -3,6 +3,7 @@
     using System;
 
     using Eventures.Data;
+    using Eventures.Filters;
     using Eventures.Logging;
     using Eventures.Middlewares;
     using Eventures.Models;
@@ -16,7 +17,6 @@
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.DependencyInjection.Extensions;
     using Microsoft.Extensions.Logging;
 
     public class Startup
@@ -60,6 +60,7 @@
             services.AddMvc();
 
             services.AddScoped<IEventService, EventService>();
+            services.AddScoped<LogUserActivityActionFilter>();
             services.AddLogging();
         }
 
