@@ -8,20 +8,24 @@
             <div class="form-group col">
                 <label asp-for="Username"></label>
                 <input asp-for="Username" class="form-control" placeholder="Username...">
+                <span asp-validation-for="Username" class="text-danger"></span>
             </div>
             <div class="form-group col">
                 <label asp-for="Email"></label>
                 <input asp-for="Email" class="form-control" placeholder="Email...">
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
         </div>
         <div class="row">
             <div class="form-group col">
                 <label asp-for="Password">Password</label>
                 <input asp-for="Password" class="form-control" placeholder="Password...">
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group col">
                 <label asp-for="ConfirmPassword"></label>
                 <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password...">
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
         </div>
         <hr class="bg-secondary" />
@@ -29,15 +33,18 @@
             <div class="form-group col">
                 <label asp-for="FirstName"></label>
                 <input asp-for="FirstName" class="form-control" placeholder="First Name...">
+                <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
             <div class="form-group col">
                 <label asp-for="LastName"></label>
                 <input asp-for="LastName" class="form-control" placeholder="Last Name...">
+                <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
             <label asp-for="UniversalCitizenNumber"></label>
             <input asp-for="UniversalCitizenNumber" class="form-control" placeholder="Universal Citizen Number...">
+            <span asp-validation-for="UniversalCitizenNumber" class="text-danger"></span>
         </div>
         <hr class="bg-secondary"/>
 
