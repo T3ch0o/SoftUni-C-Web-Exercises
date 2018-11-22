@@ -10,10 +10,10 @@
             <a href="/" class="nav-link nav-link-white">Home</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="#" aria-expanded="false">Events</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="" aria-expanded="false">Events</a>
             <div class="dropdown-menu">
-                <a asp-area="Events" class="dropdown-item">All Events</a>
-                @if (User.IsInRole("Administartor"))
+                <a asp-area="Events" asp-controller="Event" class="dropdown-item">All Events</a>
+                @if (User.IsInRole("Administrator"))
                 {
                     <a asp-area="Events" asp-controller="Event" asp-action="Create" class="dropdown-item">Create Event</a>
                 }
