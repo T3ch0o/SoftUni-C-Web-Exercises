@@ -10,28 +10,29 @@
     <link rel="stylesheet" type="text/css" href="~/css/site.css">
 </head>
 <body>
-<div class="container-fluid">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-color">
-            <a class="navbar-brand nav-link-white" href="/">Aventures</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-                <partial name="_LoginPartial" />
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-color">
+                <a class="navbar-brand nav-link-white" href="/">Aventures</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                    <partial name="_LoginPartial" />
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            @RenderBody()
+        </main>
+        <footer>
+            <div class="container bg-color">
+                <div class="p-2 text-center">
+                    &copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.
+                </div>
             </div>
-        </nav>
-    </header>
-    <main class="container">
-        @RenderBody()
-    </main>
-    <footer>
-        <div class="container bg-color">
-            <div class="p-2 text-center">
-                &copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.
-            </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
+    <partial name="_ScriptsPartial" />
 </body>
 </html>
