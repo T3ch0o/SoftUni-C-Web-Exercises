@@ -23,14 +23,14 @@
             return View();
         }
 
-        [Authorize("Administrator")]
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        [Authorize("Administrator")]
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create(EventViewModel model)
         {
             if (ModelState.IsValid)
