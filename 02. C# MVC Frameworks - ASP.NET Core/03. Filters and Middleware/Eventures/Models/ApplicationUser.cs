@@ -9,7 +9,5 @@
         public string LastName { get; set; }
 
         public string UniversalCitizenNumber { get; set; }
-
-        public int EventId { get; set; }
     }
 }
