@@ -45,15 +45,14 @@
         {
             List<MyOrderedEventsViewModel> myEvents = new List<MyOrderedEventsViewModel>();
 
-            foreach (Order order in _db.Orders.Where(order => order.CustomerId == userId))
+            foreach (Order order in _db.Orders.Where(order => order.CustomerId == userId).Include(o => o.Event))
             {
-                Event currentEvent = _db.Events.FirstOrDefault(e => e.Id == order.EventId);
 
                 myEvents.Add(new MyOrderedEventsViewModel
                 {
-                    Name = currentEvent?.Name,
-                    Start = currentEvent.Start,
-                    End = currentEvent.End,
+                    Name = order.Event.Name,
+                    Start = order.Event.Start,
+                    End = order.Event.End,
                     TicketsCount = order.TicketsCount
                 });
             }
