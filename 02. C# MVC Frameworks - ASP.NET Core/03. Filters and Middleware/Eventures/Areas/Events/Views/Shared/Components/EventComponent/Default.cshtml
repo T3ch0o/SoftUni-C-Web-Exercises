@@ -1,5 +1,9 @@
-﻿@model List<Eventures.Areas.Event.ViewModels.EventViewModel>
+﻿@using Eventures.Areas.Events.ViewModels
+@model List<Eventures.Areas.Event.ViewModels.EventViewModel>
 
+@{
+    OrderTicketViewModel orderTicket = new OrderTicketViewModel();
+}
 <table class="table w-75 mx-auto table-hover">
     <thead>
         <tr class="row">
@@ -7,7 +11,7 @@
             <th class="col-md-4">Name</th>
             <th class="col-md-2">Start</th>
             <th class="col-md-2">End</th>
-            <th class="col-md-3">Place</th>
+            <th class="col-md-3">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +22,20 @@
                 <td class="col-md-4">@Model[i].Name</td>
                 <td class="col-md-2">@Model[i].Start.ToString("MM/dd/yyyy HH:mm")</td>
                 <td class="col-md-2">@Model[i].Start.ToString("MM/dd/yyyy HH:mm")</td>
-                <td class="col-md-3">@Model[i].Place</td>
+                <td class="col-md-3">
+                    <form asp-controller="Event" asp-action="Index" method="post">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Tickets</span>
+                            </div>
+                            <input class="eventId" name="eventId" value="@Model[i].Id" hidden />
+                            <input name="tickets" id="tickets">
+                            <div class="button-holder d-flex justify-content-center ml-2">
+                                <button type="submit" class="btn bg-color-order">Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </td>
             </tr>
         }
     </tbody>
