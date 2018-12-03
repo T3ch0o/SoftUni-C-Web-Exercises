@@ -21,7 +21,7 @@
                 <th class="col-md-1">@i</th>
                 <td class="col-md-4">@Model[i].Name</td>
                 <td class="col-md-2">@Model[i].Start.ToString("MM/dd/yyyy HH:mm")</td>
-                <td class="col-md-2">@Model[i].Start.ToString("MM/dd/yyyy HH:mm")</td>
+                <td class="col-md-2">@Model[i].End.ToString("MM/dd/yyyy HH:mm")</td>
                 <td class="col-md-3">
                     <form asp-controller="Event" asp-action="Index" method="post">
                         <div class="input-group mb-3">
