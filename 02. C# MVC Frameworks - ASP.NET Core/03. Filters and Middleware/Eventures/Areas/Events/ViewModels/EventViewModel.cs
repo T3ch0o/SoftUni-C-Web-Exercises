@@ -5,6 +5,8 @@
 
     public class EventViewModel
     {
+        public string Id { get; set; }
+
         [Required]
         [Display(Name = "Name")]
         [MinLength(10, ErrorMessage = "Name should be minimum 10 symbols long.")]
