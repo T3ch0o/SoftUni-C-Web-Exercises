@@ -10,7 +10,7 @@
 
         public int TicketsCount { get; set; }
 
-        public int EventId { get; set; }
+        public string EventId { get; set; }
 
         public string CustomerId { get; set; }
     }
