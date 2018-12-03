@@ -20,6 +20,15 @@
                 }
             </div>
         </li>
+        @if (User.IsInRole("Administrator"))
+        {
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="" aria-expanded="false">Orders</a>
+                <div class="dropdown-menu">
+                    <a asp-controller="Order" asp-action="All" class="dropdown-item">All Orders</a>
+                </div>
+            </li>
+        }
     </ul>
     <ul class="navbar-nav left-side">
         @if (User.IsInRole("Administrator"))
