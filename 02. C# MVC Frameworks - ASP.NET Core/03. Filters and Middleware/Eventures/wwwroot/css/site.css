@@ -20,6 +20,11 @@ textarea {
     color: #000000;
 }
 
+.bg-color-order {
+    background-color: #808080;
+    color: #000000;
+}
+
 .nav-link-dark {
     color: #C0C0C0
 }
