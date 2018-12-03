@@ -24,7 +24,7 @@
 
             foreach (Event @event in events)
             {
-                eventViewModels.Add(new EventViewModel { Name = @event.Name, Place = @event.Place, Start = @event.Start, End = @event.End });
+                eventViewModels.Add(new EventViewModel { Id = @event.Id, Name = @event.Name, Place = @event.Place, Start = @event.Start, End = @event.End });
             }
 
 
