@@ -30,6 +30,5 @@
 
             return View(eventViewModels);
         }
-
     }
 }
