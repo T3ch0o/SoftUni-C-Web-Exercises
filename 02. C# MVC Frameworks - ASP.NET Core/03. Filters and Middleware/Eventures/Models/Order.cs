@@ -1,6 +1,7 @@
 ﻿namespace Eventures.Models
 {
     using System;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Order
     {
@@ -12,6 +13,10 @@
 
         public string EventId { get; set; }
 
+        public Event Event { get; set; }
+
         public string CustomerId { get; set; }
+
+        public ApplicationUser Customer { get; set; }
     }
 }
