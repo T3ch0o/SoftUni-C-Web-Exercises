@@ -12,7 +12,8 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="" aria-expanded="false">Events</a>
             <div class="dropdown-menu">
-                <a asp-area="Events" asp-controller="Event" class="dropdown-item">All Events</a>
+                <a asp-area="Events" asp-controller="Event" asp-action="Index" class="dropdown-item">All Events</a>
+                <a asp-area="Events" asp-controller="Event" asp-action="MyEvents" class="dropdown-item">My Events</a>
                 @if (User.IsInRole("Administrator"))
                 {
                     <a asp-area="Events" asp-controller="Event" asp-action="Create" class="dropdown-item">Create Event</a>
