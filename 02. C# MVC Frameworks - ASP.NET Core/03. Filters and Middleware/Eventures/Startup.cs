@@ -61,6 +61,7 @@
             services.AddMvc();
 
             services.AddScoped<IEventService, EventService>();
+            services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<LogUserActivityActionFilter>();
             services.AddLogging();
         }
