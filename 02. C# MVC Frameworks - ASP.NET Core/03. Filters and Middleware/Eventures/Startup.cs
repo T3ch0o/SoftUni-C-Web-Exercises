@@ -10,6 +10,7 @@
     using Eventures.Services;
     using Eventures.Services.Interfaces;
 
+    using Microsoft.AspNetCore.Authentication.Cookies;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
@@ -64,6 +65,12 @@
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<LogUserActivityActionFilter>();
             services.AddLogging();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                    .AddFacebook(facebookOptions =>
+                    {
+                        facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                        facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
