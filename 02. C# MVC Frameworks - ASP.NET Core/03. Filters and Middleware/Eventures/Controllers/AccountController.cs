@@ -6,6 +6,7 @@
     using Eventures.Models;
     using Eventures.Models.ViewModels;
 
+    using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
@@ -19,10 +20,15 @@
 
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        private readonly IAuthenticationSchemeProvider _authenticationSchemeProvider;
+
+        public AccountController(UserManager<ApplicationUser> userManager,
+                                 SignInManager<ApplicationUser> signInManager,
+                                 IAuthenticationSchemeProvider authenticationSchemeProvider)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _authenticationSchemeProvider = authenticationSchemeProvider;
         }
 
         [HttpGet]
