@@ -37,10 +37,9 @@
             if (ModelState.IsValid)
             {
                 string userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                bool isCreated = _orderService.CreateOrder(model, userId);
 
-                _orderService.CreateOrder(model, userId);
-
-                return RedirectToAction("MyEvents");
+                return isCreated ? RedirectToAction("MyEvents") : RedirectToAction("Index");
             }
 
             return View(model);
