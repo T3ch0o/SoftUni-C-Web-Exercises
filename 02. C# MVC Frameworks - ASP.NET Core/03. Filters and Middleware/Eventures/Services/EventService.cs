@@ -3,6 +3,8 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    using AutoMapper;
+
     using Eventures.Areas.Event.ViewModels;
     using Eventures.Areas.Events.ViewModels;
     using Eventures.Data;
@@ -15,27 +17,22 @@
     {
         private readonly EventuresDbContext _db;
 
-        public EventService(EventuresDbContext db)
+        private readonly IMapper _mapper;
+
+        public EventService(EventuresDbContext db, IMapper mapper)
         {
             _db = db;
+            _mapper = mapper;
         }
 
         public IEnumerable<Event> All()
         {
-            return _db.Events;
+            return _db.Events.Where(e => e.TotalTickets != 0);
         }
 
         public void Create(EventViewModel model)
         {
-            Event eventureEvent = new Event
-            {
-                Name = model.Name,
-                Place = model.Place,
-                Start = model.Start,
-                End = model.End,
-                TotalTickets = model.TotalTickets,
-                TicketPrice = model.TicketPrice
-            };
+            Event eventureEvent = _mapper.Map<Event>(model);
 
             _db.Events.Add(eventureEvent);
             _db.SaveChanges();
@@ -47,7 +44,6 @@
 
             foreach (Order order in _db.Orders.Where(order => order.CustomerId == userId).Include(o => o.Event))
             {
-
                 myEvents.Add(new MyOrderedEventsViewModel
                 {
                     Name = order.Event.Name,
