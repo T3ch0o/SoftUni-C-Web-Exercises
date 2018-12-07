@@ -2,6 +2,8 @@
 {
     using System;
 
+    using AutoMapper;
+
     using Eventures.Data;
     using Eventures.Filters;
     using Eventures.Logging;
@@ -60,17 +62,19 @@
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/");
 
             services.AddMvc();
+            services.AddLogging();
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+            });
+
+            services.AddAutoMapper();
 
             services.AddScoped<IEventService, EventService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<LogUserActivityActionFilter>();
-            services.AddLogging();
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                    .AddFacebook(facebookOptions =>
-                    {
-                        facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
-                        facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
-                    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
