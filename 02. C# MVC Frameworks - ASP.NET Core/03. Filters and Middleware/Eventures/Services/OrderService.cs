@@ -4,6 +4,8 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    using AutoMapper;
+
     using Eventures.Areas.Events.ViewModels;
     using Eventures.Data;
     using Eventures.Models;
@@ -38,18 +40,29 @@
             return orders;
         }
 
-        public void CreateOrder(OrderTicketViewModel model, string customerId)
+        public bool CreateOrder(OrderTicketViewModel model, string customerId)
         {
-            Order order = new Order
+            Event @event = _db.Events.FirstOrDefault(e => e.Id == model.EventId);
+
+            if (@event != null && @event.TotalTickets >= model.Tickets)
             {
-                OrderOn = DateTime.Now,
+                Order order = new Order
+                {
+                    OrderOn = DateTime.Now,
                     TicketsCount = model.Tickets,
                     EventId = model.EventId,
                     CustomerId = customerId
-            };
+                };
 
-            _db.Orders.Add(order);
-            _db.SaveChanges();
+                @event.TotalTickets -= model.Tickets;
+
+                _db.Orders.Add(order);
+                _db.SaveChanges();
+
+                return true;
+            }
+
+            return false;
         }
     }
 }
