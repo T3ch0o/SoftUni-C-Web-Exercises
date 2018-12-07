@@ -9,6 +9,6 @@
     {
         List<OrderViewModel> GetAllOrder();
 
-        void CreateOrder(OrderTicketViewModel model, string customerId);
+        bool CreateOrder(OrderTicketViewModel model, string customerId);
     }
 }
