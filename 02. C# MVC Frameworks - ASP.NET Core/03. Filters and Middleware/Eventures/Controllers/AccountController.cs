@@ -3,6 +3,8 @@
     using System.Linq;
     using System.Threading.Tasks;
 
+    using AutoMapper;
+
     using Eventures.Models;
     using Eventures.Models.ViewModels;
 
@@ -22,13 +24,17 @@
 
         private readonly IAuthenticationSchemeProvider _authenticationSchemeProvider;
 
+        private readonly IMapper _mapper;
+
         public AccountController(UserManager<ApplicationUser> userManager,
                                  SignInManager<ApplicationUser> signInManager,
-                                 IAuthenticationSchemeProvider authenticationSchemeProvider)
+                                 IAuthenticationSchemeProvider authenticationSchemeProvider,
+                                 IMapper mapper)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _authenticationSchemeProvider = authenticationSchemeProvider;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -79,14 +85,7 @@
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser user = new ApplicationUser
-                {
-                    UserName = model.Username,
-                    Email = model.Email,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    UniversalCitizenNumber = model.UniversalCitizenNumber
-                };
+                ApplicationUser user = _mapper.Map<ApplicationUser>(model);
 
                 IdentityResult result = await _userManager.CreateAsync(user, model.Password);
 
