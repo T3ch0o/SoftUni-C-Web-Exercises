@@ -1,16 +1,20 @@
 ﻿namespace Eventures.Areas.Events.Controllers
 {
-    using System.Collections;
     using System.Collections.Generic;
     using System.Security.Claims;
+
+    using AutoMapper;
 
     using Eventures.Areas.Event.ViewModels;
     using Eventures.Areas.Events.ViewModels;
     using Eventures.Filters;
+    using Eventures.Models;
     using Eventures.Services.Interfaces;
 
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
+
+    using X.PagedList;
 
     [Authorize]
     public class EventController : Controller
@@ -19,16 +23,31 @@
 
         private readonly IOrderService _orderService;
 
-        public EventController(IEventService eventService, IOrderService orderService)
+        private readonly IMapper _mapper;
+
+        public EventController(IEventService eventService, IOrderService orderService, IMapper mapper)
         {
             _eventService = eventService;
             _orderService = orderService;
+            _mapper = mapper;
         }
 
         [ServiceFilter(typeof(LogUserActivityActionFilter))]
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            return View();
+            IEnumerable<Event> events = _eventService.All();
+            List<EventViewModel> eventViewModels = new List<EventViewModel>();
+
+            foreach (Event @event in events)
+            {
+                eventViewModels.Add(_mapper.Map<EventViewModel>(@event));
+            }
+
+            int nextPage = page ?? 1;
+
+            IPagedList<EventViewModel> pagedViewModels = eventViewModels.ToPagedList(nextPage, 5);
+
+            return View(pagedViewModels);
         }
 
         [HttpPost]
@@ -42,7 +61,7 @@
                 return isCreated ? RedirectToAction("MyEvents") : RedirectToAction("Index");
             }
 
-            return View(model);
+            return View();
         }
 
         public IActionResult MyEvents()
