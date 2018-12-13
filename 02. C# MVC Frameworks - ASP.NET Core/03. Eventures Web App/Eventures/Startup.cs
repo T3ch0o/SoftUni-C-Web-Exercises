@@ -76,6 +76,7 @@
 
             services.AddScoped<IEventService, EventService>();
             services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<LogUserActivityActionFilter>();
             services.AddScoped<SieveProcessor>();
         }
@@ -110,10 +111,6 @@
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                    name: "Api",
-                    template: "api/{controller}/{action}/{id?}");
-
                 routes.MapRoute(
                     name: "areas",
                     template: "{area}/{controller=Event}/{action=Index}/{id?}");
