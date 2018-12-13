@@ -1,6 +1,7 @@
 ﻿namespace Eventures.Services.Interfaces
 {
     using System.Collections.Generic;
+    using System.Linq;
 
     using Eventures.Areas.Event.ViewModels;
     using Eventures.Areas.Events.ViewModels;
@@ -8,7 +9,7 @@
 
     public interface IEventService
     {
-        IEnumerable<Event> All();
+        IQueryable<Event> All();
 
         void Create(EventViewModel model);
 
