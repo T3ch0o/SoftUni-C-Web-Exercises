@@ -22,6 +22,8 @@
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
 
+    using Sieve.Services;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -75,6 +77,7 @@
             services.AddScoped<IEventService, EventService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<LogUserActivityActionFilter>();
+            services.AddScoped<SieveProcessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -107,6 +110,10 @@
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                    name: "Api",
+                    template: "api/{controller}/{action}/{id?}");
+
                 routes.MapRoute(
                     name: "areas",
                     template: "{area}/{controller=Event}/{action=Index}/{id?}");
