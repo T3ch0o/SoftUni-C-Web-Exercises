@@ -7,6 +7,9 @@ namespace Eventures.Controllers
     using Eventures.Models.ViewModels;
     using Eventures.Services.Interfaces;
 
+    using Microsoft.AspNetCore.Authorization;
+
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly IOrderService _orderService;
