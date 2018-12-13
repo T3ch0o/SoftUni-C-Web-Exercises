@@ -3,6 +3,8 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
+    using Sieve.Attributes;
+
     public class EventViewModel
     {
         public string Id { get; set; }
@@ -34,6 +36,7 @@
         [Required]
         [Display(Name = "Price Per Ticket")]
         [DataType(DataType.Currency, ErrorMessage = "Ticket Price must be a number.")]
+        [Sieve(CanFilter = true, CanSort = true)]
         public decimal TicketPrice { get; set; }
     }
 }
