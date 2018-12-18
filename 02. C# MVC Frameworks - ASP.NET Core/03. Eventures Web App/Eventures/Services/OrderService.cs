@@ -21,7 +21,7 @@
             _db = db;
         }
 
-        public List<OrderViewModel> GetAllOrder()
+        public List<OrderViewModel> GetAllOrders()
         {
             List<OrderViewModel> orders = new List<OrderViewModel>();
 

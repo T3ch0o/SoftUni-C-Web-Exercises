@@ -21,7 +21,7 @@ namespace Eventures.Controllers
 
         public IActionResult All()
         {
-            List<OrderViewModel> orders = _orderService.GetAllOrder();
+            List<OrderViewModel> orders = _orderService.GetAllOrders();
 
             return View(orders);
         }

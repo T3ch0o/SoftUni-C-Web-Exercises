@@ -7,7 +7,7 @@
 
     public interface IOrderService
     {
-        List<OrderViewModel> GetAllOrder();
+        List<OrderViewModel> GetAllOrders();
 
         bool CreateOrder(OrderTicketViewModel model, string customerId);
     }
