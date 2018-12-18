@@ -4,8 +4,6 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using AutoMapper;
-
     using Eventures.Areas.Events.ViewModels;
     using Eventures.Data;
     using Eventures.Models;
