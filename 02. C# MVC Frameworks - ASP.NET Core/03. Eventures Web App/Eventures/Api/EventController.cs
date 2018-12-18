@@ -34,7 +34,7 @@
         [HttpGet]
         public object GetEvents(SieveModel sieveModel)
         {
-            IEnumerable<Event> events = _eventService.All();
+            IEnumerable<Event> events = _eventService.GetAllWithTicketPrice();
             List<EventViewModel> eventViewModels = new List<EventViewModel>();
 
             foreach (Event @event in events)
@@ -42,7 +42,7 @@
                 eventViewModels.Add(_mapper.Map<EventViewModel>(@event));
             }
 
-            IQueryable<Event> filteredData = _sieveProcessor.Apply(sieveModel, _eventService.All());
+            IQueryable<Event> filteredData = _sieveProcessor.Apply(sieveModel, _eventService.GetAllWithTicketPrice());
 
             return filteredData;
         }

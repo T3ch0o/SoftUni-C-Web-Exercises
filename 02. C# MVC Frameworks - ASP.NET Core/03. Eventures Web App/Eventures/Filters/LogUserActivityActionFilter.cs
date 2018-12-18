@@ -24,7 +24,7 @@
         public override void OnActionExecuted(ActionExecutedContext context)
         {
             string username = context.HttpContext.User.Identity.Name;
-            Event eventureEvent = _eventService.All().FirstOrDefault();
+            Event eventureEvent = _eventService.GetAllWithTicketPrice().FirstOrDefault();
 
             if (eventureEvent != null)
             {

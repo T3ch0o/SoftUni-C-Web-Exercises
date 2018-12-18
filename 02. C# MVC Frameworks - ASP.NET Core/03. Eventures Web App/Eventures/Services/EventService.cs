@@ -25,7 +25,7 @@
             _mapper = mapper;
         }
 
-        public IQueryable<Event> All()
+        public IQueryable<Event> GetAllWithTicketPrice()
         {
             return _db.Events.Where(e => e.TotalTickets != 0);
         }

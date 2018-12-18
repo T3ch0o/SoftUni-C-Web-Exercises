@@ -26,7 +26,7 @@
 
         public IViewComponentResult Invoke()
         {
-            IEnumerable<Event> events = _eventService.All();
+            IEnumerable<Event> events = _eventService.GetAllWithTicketPrice();
             List<EventViewModel> eventViewModels = new List<EventViewModel>();
 
             foreach (Event @event in events)

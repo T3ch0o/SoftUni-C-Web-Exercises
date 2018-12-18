@@ -35,7 +35,7 @@
         [ServiceFilter(typeof(LogUserActivityActionFilter))]
         public IActionResult Index(int? page)
         {
-            IEnumerable<Event> events = _eventService.All();
+            IEnumerable<Event> events = _eventService.GetAllWithTicketPrice();
             List<EventViewModel> eventViewModels = new List<EventViewModel>();
 
             foreach (Event @event in events)

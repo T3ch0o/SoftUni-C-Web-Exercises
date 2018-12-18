@@ -9,7 +9,7 @@
 
     public interface IEventService
     {
-        IQueryable<Event> All();
+        IQueryable<Event> GetAllWithTicketPrice();
 
         void Create(EventViewModel model);
 
