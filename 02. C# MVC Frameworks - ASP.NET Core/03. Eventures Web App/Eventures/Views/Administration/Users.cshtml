@@ -33,18 +33,7 @@
                                 <input class="userData" name="userData" value="@(e.Id + " " + e.UserRole)" hidden/>
                                 <div class="button-holder d-flex justify-content-center ml-2 mx-auto">
                                     <button type="submit" class="btn bg-color-order">
-                                        @if (e.UserRole == "Admin")
-                                        {
-                                            <div>
-                                                [Demote]
-                                            </div>
-                                        }
-                                        else
-                                        {
-                                            <div>
-                                                [Promote]
-                                            </div>
-                                        }
+                                        @(e.UserRole == "Admin" ? "[Demote]" : "[Promote]")
                                     </button>
                                 </div>
                             </div>
